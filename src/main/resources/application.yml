@@ -1,0 +1,17 @@
+server:
+    port: 9000
+    servlet:
+        context-path: /
+
+spring:
+    datasource:
+        driver-class-name: org.postgresql.Driver
+        url: jdbc:postgresql://localhost:5432/acessounico_db
+        username: acessounico
+        password: dksj23$@
+    jpa:
+        show-sql: true
+        database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+        generate-ddl: true
+        hibernate:
+            ddl-auto: none
